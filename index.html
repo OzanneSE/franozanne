@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fran Ozanne — Chef · Consultor Gastronômico</title>
+<meta name="description" content="Consultoria gastronômica, estratégia de marca e conteúdo, e metodologia própria de análise de projetos — por Fran Ozanne, Chef Consultor.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#121009">
+<link rel="canonical" href="https://ozannese.github.io/franozanne/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fran Ozanne">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://ozannese.github.io/franozanne/">
+<meta property="og:title" content="Fran Ozanne — Chef · Consultor Gastronômico">
+<meta property="og:description" content="Consultoria gastronômica, estratégia de marca e conteúdo, e metodologia própria de análise de projetos — por Fran Ozanne, Chef Consultor.">
+<meta property="og:image" content="https://ozannese.github.io/franozanne/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fran Ozanne — Chef e Consultor Gastronômico">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fran Ozanne — Chef · Consultor Gastronômico">
+<meta name="twitter:description" content="Consultoria gastronômica, estratégia de marca e conteúdo, e metodologia própria de análise de projetos.">
+<meta name="twitter:image" content="https://ozannese.github.io/franozanne/assets/og-image.jpg">
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Fran Ozanne",
+  "jobTitle": "Chef · Consultor Gastronômico",
+  "url": "https://ozannese.github.io/franozanne/",
+  "image": "https://ozannese.github.io/franozanne/assets/og-image.jpg",
+  "sameAs": ["https://instagram.com/fran.ozanne"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Aracaju",
+    "addressRegion": "SE",
+    "addressCountry": "BR"
+  },
+  "alumniOf": [
+    {"@type":"CollegeOrUniversity","name":"Universidade Tiradentes (UNIT)"},
+    {"@type":"CollegeOrUniversity","name":"Le Cordon Bleu Lima"}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#121009; --bg-2:#1B1811; --ink:#F3EEE2; --ink-2:#B9AF9B;
+  --line:#332E22; --card:#1E1B13;
+  --green:#5A9663; --green-dim:#3D6B45;
+  --terracotta:#D97A44; --terracotta-dim:#B5572A;
+  --gold:#C8A030;
+  --shadow-hard:5px 5px 0 var(--terracotta-dim);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.6;
+  -webkit-font-smoothing:antialiased;position:relative;overflow-x:hidden;
+}
+/* grain */
+body::before{
+  content:"";position:fixed;inset:0;z-index:999;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+a{color:inherit}
+img{max-width:100%;display:block}
+.display{font-family:'Bebas Neue',sans-serif}
+.mono{font-family:'DM Mono',monospace}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:40;background:rgba(18,16,9,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 24px}
+.brand{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:.03em}
+.navlinks{display:flex;gap:28px;font-size:.82rem;font-weight:500;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.03em}
+.navlinks a{text-decoration:none;color:var(--ink-2);transition:color .15s}
+.navlinks a:hover{color:var(--terracotta)}
+.navcta{background:var(--terracotta);color:#1a1108;padding:9px 20px;font-size:.78rem;font-weight:700;text-decoration:none;white-space:nowrap;
+  font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.03em;border:2px solid var(--terracotta)}
+.navcta:hover{background:transparent;color:var(--terracotta)}
+@media(max-width:760px){.navlinks{display:none}}
+
+/* TICKER */
+.ticker{background:var(--terracotta-dim);color:#1a1108;overflow:hidden;white-space:nowrap;border-bottom:2px solid var(--gold)}
+.ticker-track{display:inline-block;padding:8px 0;animation:scroll 22s linear infinite}
+.ticker span{font-family:'DM Mono',monospace;font-size:.78rem;font-weight:500;text-transform:uppercase;letter-spacing:.12em;padding:0 22px}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* HERO */
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;filter:saturate(1.05) contrast(1.05)}
+.hero-scrim{position:absolute;inset:0;
+  background:
+    linear-gradient(0deg, rgba(18,16,9,.98) 0%, rgba(18,16,9,.75) 32%, rgba(18,16,9,.25) 62%, rgba(18,16,9,.1) 100%),
+    linear-gradient(100deg, rgba(61,107,69,.28), transparent 55%);
+}
+.hero-content{position:relative;z-index:2;padding:64px 0 56px;width:100%}
+.kicker{letter-spacing:.2em;text-transform:uppercase;font-size:.76rem;font-weight:500;color:var(--gold);margin-bottom:18px}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(3.2rem,9vw,7.2rem);line-height:.92;max-width:900px;margin-bottom:20px;letter-spacing:.005em}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero p.sub{font-size:1.12rem;color:var(--ink-2);max-width:560px;margin-bottom:34px}
+.herobtns{display:flex;gap:18px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 30px;font-weight:700;font-size:.92rem;text-decoration:none;
+  font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.04em;
+  border:2px solid var(--ink);transition:transform .15s, box-shadow .15s}
+.btn-primary{background:var(--terracotta);color:#1a1108;border-color:var(--terracotta);box-shadow:var(--shadow-hard)}
+.btn-outline{color:var(--ink);box-shadow:5px 5px 0 var(--ink)}
+.btn:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--terracotta-dim)}
+.btn-outline:hover{box-shadow:8px 8px 0 var(--ink)}
+
+.badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:46px}
+.badge{background:var(--bg);border:2px solid var(--line);padding:10px 16px;font-size:.78rem;color:var(--ink-2);
+  font-family:'DM Mono',monospace;display:flex;align-items:center;gap:8px}
+.badge:nth-child(odd){transform:rotate(-1.2deg)}
+.badge:nth-child(even){transform:rotate(1deg)}
+.badge b{color:var(--ink)}
+
+/* SECTIONS */
+section{padding:96px 0}
+h2.sec-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.4rem,6vw,4rem);margin-bottom:10px;line-height:.95}
+p.sec-lead{color:var(--ink-2);max-width:640px;margin-bottom:44px;font-size:1.04rem}
+.divider{width:64px;height:4px;background:var(--terracotta);margin-bottom:22px}
+.eyebrow{font-family:'DM Mono',monospace;font-size:.76rem;text-transform:uppercase;letter-spacing:.16em;color:var(--gold);margin-bottom:10px}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:start}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr}}
+.about-photo{position:relative}
+.about-photo img{border:2px solid var(--line);transform:rotate(-1.6deg);box-shadow:10px 10px 0 rgba(217,122,68,.18)}
+.about-photo .cap{font-family:'DM Mono',monospace;font-size:.72rem;color:var(--ink-2);margin-top:14px;text-transform:uppercase;letter-spacing:.05em}
+.about-grid p{margin-bottom:16px;font-size:1.03rem;color:var(--ink-2)}
+.about-grid p:last-child{margin-bottom:28px}
+.credlist{border-top:2px dashed var(--line)}
+.credlist .item{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:2px dashed var(--line)}
+.credlist .item b{display:block;font-size:.98rem;color:var(--ink)}
+.credlist .item span{font-size:.85rem;color:var(--ink-2)}
+.credlist .item .yr{font-family:'DM Mono',monospace;font-size:.78rem;color:var(--terracotta);white-space:nowrap;padding-top:2px}
+
+/* SERVICES */
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--line);border:2px solid var(--line)}
+@media(max-width:820px){.services{grid-template-columns:1fr}}
+.svc{background:var(--bg);padding:34px}
+.svc .num{font-family:'DM Mono',monospace;font-size:.85rem;color:var(--terracotta);font-weight:500;letter-spacing:.08em;margin-bottom:12px}
+.svc h3{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;margin-bottom:10px;letter-spacing:.01em}
+.svc p{color:var(--ink-2);font-size:.96rem;margin-bottom:16px}
+.svc ul{list-style:none;font-size:.9rem;color:var(--ink-2)}
+.svc ul li{padding:5px 0 5px 18px;position:relative}
+.svc ul li::before{content:"—";position:absolute;left:0;color:var(--terracotta)}
+
+/* METODOLOGIA */
+.metodologia{background:var(--bg-2);border:2px solid var(--line);padding:52px 44px}
+.lenses{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:32px;background:var(--line);border:1px solid var(--line)}
+@media(max-width:820px){.lenses{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.lenses{grid-template-columns:1fr}}
+.lens{background:var(--bg-2);padding:22px}
+.lens .tag{font-family:'DM Mono',monospace;font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;font-weight:500;color:var(--green);margin-bottom:8px}
+.lens h4{font-family:'Bebas Neue',sans-serif;font-size:1.35rem;margin-bottom:6px}
+.lens p{font-size:.86rem;color:var(--ink-2)}
+.metod-note{margin-top:28px;font-size:.94rem;color:var(--ink-2);max-width:680px}
+
+/* FORMAÇÃO */
+.formacao-list{display:grid;gap:2px;background:var(--line);border:2px solid var(--line)}
+.formacao-card{border:0;padding:34px;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;background:var(--card)}
+@media(max-width:600px){.formacao-card{grid-template-columns:1fr}}
+.formacao-card .icon{width:60px;height:60px;flex:none;display:flex;align-items:center;justify-content:center;
+  font-family:'DM Mono',monospace;font-size:1.1rem;color:var(--gold);border:2px solid var(--gold)}
+.formacao-card h3{font-family:'Bebas Neue',sans-serif;font-size:1.65rem;margin-bottom:6px}
+.formacao-card p{color:var(--ink-2);font-size:.95rem}
+
+/* CONTATO */
+.contato{background:var(--card);border:2px solid var(--line);padding:60px 48px;text-align:center;position:relative}
+.contato::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 50% 0%, rgba(217,122,68,.14), transparent 70%);pointer-events:none}
+.contato h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,6vw,4.4rem);margin-bottom:16px;position:relative}
+.contato p{color:var(--ink-2);max-width:520px;margin:0 auto 32px;font-size:1.02rem;position:relative}
+.contato-form{max-width:480px;margin:0 auto;display:grid;gap:12px;text-align:left;position:relative}
+.contato-form input,.contato-form textarea{
+  width:100%;padding:14px 16px;border:2px solid var(--line);background:var(--bg);color:var(--ink);
+  font-family:'DM Sans',sans-serif;font-size:.94rem}
+.contato-form textarea{min-height:100px;resize:vertical}
+.contato-form ::placeholder{color:#8a806c}
+.contato-form button{margin-top:6px;background:var(--terracotta);color:#1a1108;border:2px solid var(--terracotta);padding:15px;font-weight:700;
+  font-size:.92rem;cursor:pointer;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.04em;box-shadow:var(--shadow-hard);transition:transform .15s,box-shadow .15s}
+.contato-form button:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--terracotta-dim)}
+.contato-direct{margin-top:28px;font-size:.9rem;color:var(--ink-2);position:relative}
+.contato-direct a{color:var(--gold);text-decoration:none;font-weight:600}
+
+.social-row{display:flex;justify-content:center;gap:12px;margin-top:22px;flex-wrap:wrap;position:relative}
+.social-row a{font-size:.78rem;font-weight:700;color:var(--ink);border:2px solid var(--line);padding:9px 18px;text-decoration:none;
+  font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.03em;transition:border-color .15s,color .15s}
+.social-row a:hover{border-color:var(--terracotta);color:var(--terracotta)}
+
+footer{padding:40px 0;text-align:center;color:var(--ink-2);font-size:.8rem;border-top:1px solid var(--line);margin-top:10px;font-family:'DM Mono',monospace}
+.note-edit{font-size:.72rem;color:#6b6353;text-align:center;margin-top:12px}
+
+/* reveal on scroll */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease, transform .6s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="mono">TÉCNICA · TERRITÓRIO · RESULTADO</span><span class="mono">TÉCNICA · TERRITÓRIO · RESULTADO</span>
+    <span class="mono">TÉCNICA · TERRITÓRIO · RESULTADO</span><span class="mono">TÉCNICA · TERRITÓRIO · RESULTADO</span>
+    <span class="mono">TÉCNICA · TERRITÓRIO · RESULTADO</span><span class="mono">TÉCNICA · TERRITÓRIO · RESULTADO</span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">FRAN OZANNE</div>
+    <div class="navlinks">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#metodologia">Metodologia</a>
+      <a href="#formacao">Formação</a>
+      <a href="links.html">Links</a>
+    </div>
+    <a class="navcta" href="#contato">Fale comigo</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <img class="hero-img" src="assets/hero-fran6.jpg" alt="Fran Ozanne, chef, retrato de estúdio">
+  <div class="hero-scrim"></div>
+  <div class="hero-content wrap">
+    <p class="kicker mono">Chef · Consultor Gastronômico</p>
+    <h1>Da raiz ao prato<br><em>— técnica, tempero e leveza.</em></h1>
+    <p class="sub">Técnica francesa aplicada ao terroir sergipano, e uma metodologia própria pra decidir com clareza. Cardápio, marca e estratégia — sem enrolação, com critério.</p>
+    <div class="herobtns">
+      <a class="btn btn-primary" href="#contato">Vamos conversar</a>
+      <a class="btn btn-outline" href="#servicos">Ver serviços</a>
+    </div>
+    <div class="badges">
+      <div class="badge">🎓 <b>Le Cordon Bleu</b>, Lima · 2018</div>
+      <div class="badge">🎓 <b>UNIT</b>, Gastronomia · 2012</div>
+      <div class="badge">🏅 <b>Embaixador da Cozinha Sergipana</b></div>
+      <div class="badge">🏆 <b>Prêmio Dolma</b>, 2018</div>
+      <div class="badge">🔪 <b>14 anos</b> de cozinha profissional</div>
+    </div>
+  </div>
+</header>
+
+<section id="sobre" class="reveal">
+  <div class="wrap">
+    <p class="eyebrow">Quem cozinha</p>
+    <div class="divider"></div>
+    <h2 class="sec-title">Sobre</h2>
+    <p class="sec-lead">Pai francês, mãe gaúcha, criado em Sergipe — a fusão como laboratório de identidade, na cozinha e fora dela.</p>
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="assets/about-fran13.jpg" alt="Fran Ozanne afiando uma faca, luz dramática">
+        <p class="cap">— onde eu mais penso: faca na mão, cabeça baixa, tudo em silêncio.</p>
+      </div>
+      <div>
+        <p>Comecei como auxiliar de cozinha em Porto Alegre e cheguei a chef-proprietário do Alma Bistrot, em Aracaju. Pelo caminho, graduação em Gastronomia pela UNIT (Aracaju/SE, 2012), especialização em Gestão de Restaurantes pelo Le Cordon Bleu (Lima, 2018), o título de Embaixador da Cozinha Sergipana, o Prêmio Dolma em 2018, e seis anos lecionando no Instituto Gastronômico das Américas.</p>
+        <p>Hoje atuo como curador e consultor independente para projetos gastronômicos que precisam de algo além de "mais um cardápio bonito": precisam de critério técnico, de uma narrativa que se sustente, e de alguém que sabe dizer "isso vai dar ruim" antes que aconteça.</p>
+        <p>Nos últimos meses, além da cozinha, venho aplicando essa mesma disciplina técnica a marca, conteúdo e estratégia — inclusive reformulando do zero a comunicação de produtos gastronômicos, com foco total em conversão real, não em métrica de vaidade.</p>
+        <div class="credlist">
+          <div class="item"><div><b>Le Cordon Bleu — Lima</b><span>Gestão de Restaurantes</span></div><div class="yr">2018</div></div>
+          <div class="item"><div><b>UNIT — Universidade Tiradentes</b><span>Graduação em Gastronomia, Aracaju/SE</span></div><div class="yr">2012</div></div>
+          <div class="item"><div><b>Embaixador da Cozinha Sergipana</b><span>Defesa e difusão da cozinha de Sergipe</span></div><div class="yr">—</div></div>
+          <div class="item"><div><b>Prêmio Dolma</b><span>Reconhecimento gastronômico</span></div><div class="yr">2018</div></div>
+          <div class="item"><div><b>Docente — Instituto Gastronômico das Américas</b><span>6 anos de docência</span></div><div class="yr">—</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicos" class="reveal">
+  <div class="wrap">
+    <p class="eyebrow">O que eu faço</p>
+    <div class="divider"></div>
+    <h2 class="sec-title">Serviços</h2>
+    <p class="sec-lead">Quatro frentes que costumo combinar — a maioria dos projetos precisa de mais de uma ao mesmo tempo.</p>
+    <div class="services">
+      <div class="svc">
+        <div class="num">01</div>
+        <h3>Curadoria e consultoria gastronômica</h3>
+        <p>Critério técnico de ponta a ponta: do conceito de cardápio ao número que garante que ele se sustenta na operação.</p>
+        <ul>
+          <li>Criação e curadoria de cardápio</li>
+          <li>Ficha técnica, CMV e precificação</li>
+          <li>Avaliação técnica de restaurante e equipe</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <div class="num">02</div>
+        <h3>Estratégia de marca e conteúdo</h3>
+        <p>Posicionamento e comunicação que convertem — não vídeo bonito que ninguém termina de assistir.</p>
+        <ul>
+          <li>Reformulação de roteiro e formato de conteúdo</li>
+          <li>Funil de conversão (topo, meio, fundo)</li>
+          <li>Narrativa de marca e autoridade</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <div class="num">03</div>
+        <h3>Metodologia própria de análise de projeto</h3>
+        <p>Um jeito estruturado de cruzar mercado, autenticidade, viabilidade, técnica, processo e cultura antes de decidir. <a href="#metodologia" style="color:var(--terracotta);font-weight:600;text-decoration:none">Ver como funciona ↓</a></p>
+        <ul>
+          <li>Diagnóstico completo de viabilidade</li>
+          <li>Critérios de decisão com prazo e número, não achismo</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <div class="num">04</div>
+        <h3>Formação e aulas</h3>
+        <p>Transmissão de técnica e critério — não só receita.</p>
+        <ul>
+          <li>Aulas e workshops técnicos</li>
+          <li>Formação de equipe e cultura de cozinha</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="metodologia" class="reveal">
+  <div class="wrap">
+    <p class="eyebrow">Como eu decido</p>
+    <div class="divider"></div>
+    <h2 class="sec-title">A metodologia</h2>
+    <p class="sec-lead">Todo projeto gastronômico que já vi fracassar, fracassou por ignorar uma destas seis lentes — nunca por falta de uma boa ideia.</p>
+    <div class="metodologia">
+      <p style="max-width:680px;color:var(--ink-2)">Antes de recomendar qualquer coisa, analiso o projeto por seis ângulos diferentes — cada um pega um tipo de risco que os outros não veem sozinho. Não é achismo disfarçado de opinião de chef: é um processo que uso nos meus próprios projetos, com a mesma disciplina que aplico aos dos meus clientes.</p>
+      <div class="lenses">
+        <div class="lens"><div class="tag">Mercado</div><h4>Marca &amp; Conversão</h4><p>Posicionamento, funil, o que de fato converte cliente — não o que parece bonito.</p></div>
+        <div class="lens"><div class="tag">Identidade</div><h4>Autenticidade &amp; Terroir</h4><p>O que é genuíno versus o que é tendência passageira disfarçada de conceito.</p></div>
+        <div class="lens"><div class="tag">Estrutura</div><h4>Viabilidade &amp; Risco</h4><p>Prazo, recurso, responsável, critério de decisão com data — não esperança de que dê certo.</p></div>
+        <div class="lens"><div class="tag">Técnica</div><h4>Cardápio &amp; Margem</h4><p>Ficha técnica, CMV, engenharia de cardápio — a conta por trás do prato.</p></div>
+        <div class="lens"><div class="tag">Operação</div><h4>Processo &amp; Compliance</h4><p>O que faz a cozinha funcionar todo dia, com segurança, sem depender de heroísmo.</p></div>
+        <div class="lens"><div class="tag">Pessoas</div><h4>Cultura &amp; Hospitalidade</h4><p>Equipe e parceiros que entendem o porquê — porque isso é o que sustenta o como.</p></div>
+      </div>
+      <p class="metod-note">Uso isso pra responder perguntas difíceis com clareza — inclusive "vale a pena continuar investindo nisso, ou é hora de parar?" — com critério, não só com instinto.</p>
+    </div>
+  </div>
+</section>
+
+<section id="formacao" class="reveal">
+  <div class="wrap">
+    <p class="eyebrow">Formação</p>
+    <div class="divider"></div>
+    <h2 class="sec-title">Formação</h2>
+    <p class="sec-lead">Formação acadêmica e a experiência de seis anos do outro lado da bancada, ensinando.</p>
+    <div class="formacao-list">
+      <div class="formacao-card">
+        <div class="icon">UNIT</div>
+        <div>
+          <h3>Universidade Tiradentes (UNIT)</h3>
+          <p>Graduação em Gastronomia. Aracaju, Sergipe · 2012.</p>
+        </div>
+      </div>
+      <div class="formacao-card">
+        <div class="icon">LCB</div>
+        <div>
+          <h3>Le Cordon Bleu — Lima</h3>
+          <p>Especialização em Gestão de Restaurantes · 2018.</p>
+        </div>
+      </div>
+      <div class="formacao-card">
+        <div class="icon">IGA</div>
+        <div>
+          <h3>Instituto Gastronômico das Américas</h3>
+          <p>Docente por 6 anos. Ensinei técnica com o mesmo critério que aplico em consultoria: técnica serve o prato, o prato serve quem come — nessa ordem.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="reveal">
+  <div class="wrap">
+    <div class="contato">
+      <h2>Vamos conversar sobre o seu projeto</h2>
+      <p>Conta um pouco do que você precisa — cardápio, marca, viabilidade, ou tudo junto — e eu respondo diretamente.</p>
+      <form class="contato-form" onsubmit="enviarContato(event)">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="email" id="email" placeholder="Seu e-mail" required>
+        <textarea id="mensagem" placeholder="Conte um pouco sobre o seu projeto" required></textarea>
+        <button type="submit">Enviar mensagem</button>
+      </form>
+      <div class="contato-direct">
+        ou escreva direto pra <a href="mailto:fran.ozanne@gmail.com">fran.ozanne@gmail.com</a>
+      </div>
+      <div class="social-row">
+        <a href="https://instagram.com/fran.ozanne" target="_blank" rel="noopener">Instagram @fran.ozanne</a>
+        <a href="links.html">Todos os links</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    FRAN OZANNE — CHEF · CONSULTOR GASTRONÔMICO · ARACAJU, SERGIPE, BRASIL
+  </div>
+</footer>
+
+<p class="note-edit wrap">Identidade escura + verde/terracota, com fotos reais do banco `Marca_Fran_Instagram/fotos_para_escolha`. O formulário de contato abre seu e-mail com a mensagem pronta (não depende de servidor).</p>
+
+<script>
+function enviarContato(e){
+  e.preventDefault();
+  const nome = document.getElementById('nome').value;
+  const email = document.getElementById('email').value;
+  const msg = document.getElementById('mensagem').value;
+  const subject = encodeURIComponent('Consultoria — contato pelo site (' + nome + ')');
+  const body = encodeURIComponent('Nome: ' + nome + '\nE-mail: ' + email + '\n\n' + msg);
+  window.location.href = 'mailto:fran.ozanne@gmail.com?subject=' + subject + '&body=' + body;
+}
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
