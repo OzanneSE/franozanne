@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ozannese.github.io/franozanne/sitemap.xml
+Sitemap: https://ozanneconsultoria.com.br/sitemap.xml
