@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /ferramentas/fichas/
-
-Sitemap: https://ozanneconsultoria.com.br/sitemap.xml
