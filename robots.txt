@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ozanneconsultoria.com.br/sitemap.xml
