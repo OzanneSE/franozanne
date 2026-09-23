@@ -1,1 +1,1 @@
-{"name":"na-ponta-da-lingua-piloto-manual","version":"0.3.0","private":true,"type":"module","scripts":{"build":"node build.mjs","test":"node --test test/*.test.mjs"},"engines":{"node":">=20"}}
+{"name":"na-ponta-da-lingua-piloto-manual","version":"0.3.1","private":true,"type":"module","scripts":{"build":"node build.mjs","test":"node --test test/*.test.mjs"},"engines":{"node":">=20"}}

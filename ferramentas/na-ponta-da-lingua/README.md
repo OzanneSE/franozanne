@@ -1,4 +1,4 @@
-# Na Ponta da Língua — piloto manual 0.3
+# Na Ponta da Língua — piloto manual 0.3.1
 
 Aplicação genérica sem serviços externos. Recebe um pacote JSON preparado na conversa, permite revisar perguntas e consultar pratos, e libera treino somente com banco aprovado. A V0 específica de um restaurante continua sendo uma referência; este piloto não importa automaticamente seu progresso nem seu esquema antigo.
 
@@ -9,6 +9,8 @@ Aplicação genérica sem serviços externos. Recebe um pacote JSON preparado na
 3. Revisar e aprovar o conteúdo com François. Rascunhos usam `review.status: draft`, `questions[].status: draft` e `active: false`.
 4. Após aprovação real, gerar **nova versão**, registrar responsável/data e ativar as questões aprovadas.
 5. Importar o JSON no aplicativo. A importação não envia arquivos para um servidor.
+
+Para enviar por WhatsApp, distribua uma cópia do mesmo JSON com extensão `.txt` como documento. No celular, salve o documento e selecione-o pelo botão **Carregar pacote de treinamento** no site. O aplicativo aceita `.txt` e `.json`, lê o conteúdo da mesma forma e não depende de abrir o anexo pelo WhatsApp.
 6. Praticar, exportar o backup e trazer resultados à conversa para orientar revisões.
 
 O JSON é um pacote editorial, não uma assinatura digital de aprovação. O piloto confia no arquivo importado pelo operador; não oferece controle de acesso ou proteção contra alteração manual do banco.
