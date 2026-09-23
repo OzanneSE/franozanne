@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#121009">
+<meta name="description" content="Compare margem por prato e popularidade no seu cardápio. Piloto gratuito da Ozanne Consultoria, com dados salvos no seu aparelho.">
+<link rel="canonical" href="https://ozanneconsultoria.com.br/ferramentas/engenharia/">
+<title>Engenharia de Cardápio | Ozanne Consultoria</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121009;--card:#1E1B13;--ink:#F3EEE2;--muted:#B9AF9B;--line:#514737;--orange:#D97A44;--green:#5A9663;--gold:#C8A030}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 'DM Sans',system-ui,sans-serif}a{color:var(--orange)}.wrap{max-width:1120px;margin:auto;padding:28px 24px 100px}.top{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:20px}.brand{font-family:'DM Mono',monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--orange);font-size:.75rem}.top a{color:var(--muted);text-decoration:none}header{max-width:760px;padding:54px 0 24px}h1,h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;line-height:1}h1{font-size:clamp(3rem,8vw,5.5rem);margin:0 0 20px}h1 em{color:var(--green);font-style:normal}h2{font-size:2.2rem;margin:0 0 16px}.eyebrow{font:500 .75rem 'DM Mono',monospace;color:var(--gold);letter-spacing:.15em;text-transform:uppercase}.lede,.hint{color:var(--muted)}.lede{font-size:1.1rem}.notice{color:var(--ink);background:#29301e;border-left:3px solid var(--green);padding:10px 14px;min-height:46px;margin:22px 0}.panel{background:var(--card);border:1px solid var(--line);padding:24px;margin:22px 0}.fields{display:grid;grid-template-columns:minmax(170px,2fr) repeat(3,minmax(110px,1fr)) auto;gap:12px;align-items:end}label{display:block;font-size:.83rem;color:var(--muted);margin-bottom:6px}input{width:100%;border:1px solid #786D5D;border-radius:2px;padding:12px;background:#F3EEE2;color:#1C180F;font:inherit;min-height:48px}input[type=number]{font-variant-numeric:tabular-nums}button,.file-label{border:1px solid var(--orange);border-radius:2px;background:var(--orange);color:#19130d;padding:11px 17px;min-height:48px;font:700 .87rem 'DM Sans',sans-serif;cursor:pointer;white-space:nowrap}button:hover,.file-label:hover{filter:brightness(1.12)}button:focus-visible,a:focus-visible,input:focus-visible,.file-label:focus-within{outline:3px solid var(--green);outline-offset:3px}.small,.secondary{background:transparent;color:var(--ink);border-color:var(--line)}.small{min-height:38px;padding:5px 10px}.actions{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-top:18px}.file-label{display:inline-flex;align-items:center}.file-label input{position:absolute;inline-size:1px;block-size:1px;opacity:0;min-height:0}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:700px}th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line)}th{font:500 .73rem 'DM Mono',monospace;text-transform:uppercase;color:var(--muted)}td input{max-width:92px;padding:6px;min-height:38px}.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.metric,.quad{border:1px solid var(--line);padding:20px;background:var(--card)}.metric strong{display:block;font-size:clamp(1.25rem,3vw,1.8rem);color:var(--green);font-variant-numeric:tabular-nums}.metric span{display:block;font-size:.85rem;color:var(--muted)}.quadrants{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}.quad h3{margin:0 0 10px;color:var(--orange);font-size:1.05rem}.quad p{margin:8px 0;color:var(--ink)}.method{border-left:3px solid var(--orange);padding-left:16px;color:var(--muted);margin:20px 0}.help{max-width:780px;color:var(--muted)}.help p{margin:12px 0}.help strong{color:var(--ink)}footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding-top:22px;margin-top:60px}#count{color:var(--muted);font-size:.85rem}#results{color:var(--muted)}
+@media(max-width:800px){.fields{grid-template-columns:1fr 1fr}.fields>div:first-child{grid-column:1/-1}.fields button{grid-column:1/-1}.summary{grid-template-columns:1fr}}
+@media(max-width:540px){.wrap{padding:20px 16px 80px}.quadrants{grid-template-columns:1fr}.panel{padding:17px}.top{align-items:flex-start}.top a{text-align:right}}
+</style>
+<script src="./app.js" defer></script>
+</head>
+<body><div class="wrap">
+<nav class="top"><span class="brand">Ozanne Consultoria</span><a href="/ferramentas/">← Todas as ferramentas</a></nav>
+<header><p class="eyebrow">Piloto para análise de cardápio</p><h1>O que vende.<br><em>O que sobra.</em></h1><p class="lede">Compare a margem de cada prato com sua participação nas vendas. Você pode digitar os custos ou trazer um backup das Fichas Técnicas. Para analisar, informe quantas unidades vendeu no mesmo período.</p></header>
+<p class="notice" id="notice" role="status" aria-live="polite">Os dados ficam neste navegador. Salve uma cópia antes de trocar de aparelho ou limpar os dados.</p>
+<section class="panel" aria-labelledby="add-title"><h2 id="add-title">Adicione os pratos</h2>
+<form id="add" class="fields">
+<div><label for="name">Nome do prato</label><input id="name" type="text" maxlength="120" required placeholder="Ex.: Arroz de polvo"></div>
+<div><label for="cost">Custo por prato (R$)</label><input id="cost" type="number" min="0" step="0.01" required placeholder="28,50"></div>
+<div><label for="price">Preço de venda (R$)</label><input id="price" type="number" min="0.01" step="0.01" required placeholder="72,00"></div>
+<div><label for="qty">Unidades vendidas</label><input id="qty" type="number" min="0" step="1" required placeholder="80"></div>
+<button type="submit">Adicionar</button>
+</form>
+<div class="actions"><label class="file-label">Importar JSON <input type="file" id="import" accept=".json,application/json"></label><button class="secondary" type="button" id="export">Exportar cópia</button><button class="secondary" type="button" id="demo">Ver exemplo</button><button class="secondary" type="button" id="clear">Limpar</button></div>
+<p class="hint">Aceita o backup da ferramenta Fichas Técnicas. Fichas incompletas não entram; esta é uma cópia dos custos naquele momento. Depois, preencha as vendas na tabela. Você também pode importar uma cópia desta ferramenta.</p>
+</section>
+<section class="panel" aria-labelledby="rows-title"><h2 id="rows-title">Seus pratos</h2><p id="count"></p><div class="table-wrap"><table><thead><tr><th>Prato</th><th>Custo</th><th>Preço</th><th>Unidades vendidas</th><th></th></tr></thead><tbody id="rows"></tbody></table></div></section>
+<section aria-labelledby="results-title"><h2 id="results-title">Leitura do cardápio</h2><div id="results"></div></section>
+<aside class="help"><h2>Como ler</h2><p><strong>Margem por prato:</strong> preço de venda menos custo da ficha. Não é lucro líquido. Taxas, impostos e despesas que não estão no custo da ficha podem mudar a decisão.</p><p><strong>Popularidade:</strong> participação de cada prato no total de unidades dos pratos analisados. Compare pratos do mesmo período e do mesmo recorte de cardápio.</p><p><strong>Os grupos são relativos ao conjunto digitado.</strong> Uma posição muda quando você inclui outros pratos ou corrige os dados. Use o resultado para investigar, não para retirar um item automaticamente.</p></aside>
+<footer>Ozanne Consultoria · <a href="/">Voltar ao site</a> · Piloto sem conta e sem envio de dados a um servidor.</footer>
+</div></body></html>
