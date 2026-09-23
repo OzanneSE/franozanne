@@ -12,6 +12,14 @@ test('fonte inexistente e gabarito fora das alternativas são rejeitados',()=>{
  const b=fixture();b.questions[0].source_item_ids=['ausente'];assert.throws(()=>validateBank(b),/fonte/);
  b.questions[0].source_item_ids=['item0'];b.questions[0].correct_index=7;assert.throws(()=>validateBank(b),/Gabarito/);
 });
+test('protocolo permite revisar nova questão sem confundi-la com prato ou liberar treino',()=>{
+ const b=fixture();b.protocols=[{id:'protocolo1',name:'Entrega à mesa',description:'Confirmar o destino do pedido antes de servir.',reference:'Orientação de serviço para revisão'}];
+ const q=structuredClone(b.questions[0]);q.id='q_protocolo';q.source_item_ids=[];q.source_protocol_ids=['protocolo1'];q.status='draft';q.active=false;b.questions.push(q);
+ validateBank(b);assert.equal(pickMission(b,initialState(),NOW).includes(q.id),false);
+ q.source_protocol_ids=['inexistente'];assert.throws(()=>validateBank(b),/fonte/);
+ q.source_protocol_ids=['protocolo1'];q.status='approved';q.active=true;b.questions=[q];validateBank(b);
+ assert.equal(pickMission(b,initialState(),NOW).includes(q.id),true);
+});
 test('missão tem até cinco questões, sem duplicar prato e com três competências',()=>{
  const b=fixture();b.questions[1].source_item_ids=['item0'];validateBank(b);const ids=pickMission(b,initialState(),NOW);
  assert.equal(ids.length,5);assert.equal(new Set(ids.flatMap(id=>b.questions.find(q=>q.id===id).source_item_ids)).size,5);
