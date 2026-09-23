@@ -38,7 +38,7 @@ function download(name, value, raw = false) {
 }
 async function importFile(file) {
   if (!file) return;
-  ensure(!blocked, 'Resolva a recuperação antes de importar.'); ensure(file.size <= 5 * 1024 * 1024, 'Use um arquivo JSON de até 5 MB.');
+  ensure(!blocked, 'Resolva a recuperação antes de importar.'); ensure(file.size <= 5 * 1024 * 1024, 'Use um pacote .txt ou .json de até 5 MB.');
   let data; try { data = JSON.parse(await file.text()); } catch { throw new Error('Este arquivo não contém JSON válido.'); }
   if (data.format === 'npl-backup') {
     verifyBackup(data);
@@ -53,7 +53,7 @@ async function importFile(file) {
   }
   view = 'home'; selection = null; render();
 }
-function importControl() { const label = node('label', 'Carregar pacote de treinamento', 'file'); const input = node('input'); input.type = 'file'; input.accept = '.json,application/json'; input.addEventListener('change', () => safely(() => importFile(input.files[0]))); label.appendChild(input); return label; }
+function importControl() { const label = node('label', 'Carregar pacote de treinamento', 'file'); const input = node('input'); input.type = 'file'; input.accept = '.txt,.json,text/plain,application/json'; input.addEventListener('change', () => safely(() => importFile(input.files[0]))); label.appendChild(input); return label; }
 function navigate(to) { view = to; selection = null; render(); $('content').focus(); }
 function context(root) {
   if (!saved.packages.length) return;
@@ -69,6 +69,7 @@ function home(root) {
   if (p && approvedQuestions(p.bank).length) append(actions, button(p.state.active ? 'Retomar missão' : 'Começar missão', () => { saveState(startMission(p.bank, p.state)); navigate('train'); }));
   if (p) append(actions, button('Revisar o conteúdo', () => navigate('review'), 'quiet'));
   append(actions, importControl()); hero.appendChild(actions); root.appendChild(hero);
+  root.appendChild(node('p','Recebeu o pacote pelo WhatsApp? Salve o documento no celular. Abra este site no navegador, toque em “Carregar pacote de treinamento” e selecione o arquivo .txt ou .json. Não é preciso abrir o documento no WhatsApp.','note'));
   const steps = node('div', null, 'grid');
   [['01','Preparar','Envie seu cardápio ou análise na conversa e receba um banco de perguntas com fontes.'],['02','Revisar','Confira o conteúdo, corrija o que for necessário e aprove o pacote.'],['03','Praticar','Missões curtas, explicações e revisão dos pontos que pedem mais atenção.']].forEach(([n,t,d]) => append(steps, append(node('div',null,'panel'),node('span',n,'step'),node('h3',t),node('p',d,'muted')))); root.appendChild(steps);
   if (p) {
@@ -76,7 +77,7 @@ function home(root) {
     for (const n of p.bank.notes) root.appendChild(node('p', n, 'note'));
   }
 }
-function empty(root) { append(root,node('h2','Carregue um pacote para começar'),node('p','O aplicativo recebe o banco de treinamento em JSON preparado a partir da análise do seu cardápio.'),importControl()); }
+function empty(root) { append(root,node('h2','Carregue um pacote para começar'),node('p','Selecione o arquivo .txt ou .json recebido após a análise do cardápio. Se veio pelo WhatsApp, salve o documento no celular e selecione-o por este botão.'),importControl()); }
 function sourceFor(bank, q) {
   const box = node('div',null,'source');
   for (const id of q.source_item_ids) { const i = bank.items.find(i => i.id === id); append(box,node('strong',i.reference),node('p',i.description)); }
