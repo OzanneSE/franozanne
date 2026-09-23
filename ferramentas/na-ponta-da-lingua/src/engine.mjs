@@ -14,6 +14,12 @@ export function validateBank(b) {
     ensure(str(i.name, 240) && str(i.service, 120) && str(i.category, 160) && str(i.reference, 500), 'Há um prato sem nome, turno, categoria ou referência.');
     ensure(typeof i.description === 'string' && i.description.length <= 5000, 'Descrição de prato inválida.');
   }
+  ensure(b.protocols === undefined || (Array.isArray(b.protocols) && b.protocols.length <= 100), 'Fontes de protocolo inválidas.');
+  const protocols = new Set();
+  for (const p of (b.protocols || [])) {
+    ensure(code(p.id) && !items.has(p.id) && !protocols.has(p.id), 'Identificador de protocolo inválido ou repetido.'); protocols.add(p.id);
+    ensure(str(p.name, 240) && str(p.description, 5000) && str(p.reference, 500), 'Fonte de protocolo incompleta.');
+  }
   ensure(Array.isArray(b.questions) && b.questions.length > 0 && b.questions.length <= 300, 'O banco precisa ter de 1 a 300 questões.');
   const ids = new Set();
   for (const q of b.questions) {
@@ -23,7 +29,9 @@ export function validateBank(b) {
     ensure(new Set(q.options.map(o => o.trim().toLocaleLowerCase('pt-BR'))).size === q.options.length, 'Há alternativas repetidas.');
     ensure(Number.isInteger(q.correct_index) && q.correct_index >= 0 && q.correct_index < q.options.length, 'Gabarito inválido.');
     ensure(['draft', 'approved'].includes(q.status) && typeof q.active === 'boolean', 'Situação de questão inválida.');
-    ensure(Array.isArray(q.source_item_ids) && q.source_item_ids.length > 0 && q.source_item_ids.every(id => items.has(id)), 'Questão sem fonte válida.');
+    ensure(Array.isArray(q.source_item_ids) && q.source_item_ids.every(id => items.has(id)), 'Questão com fonte de prato inválida.');
+    ensure(q.source_protocol_ids === undefined || (Array.isArray(q.source_protocol_ids) && q.source_protocol_ids.every(id => protocols.has(id))), 'Questão com fonte de protocolo inválida.');
+    ensure(q.source_item_ids.length + (q.source_protocol_ids || []).length > 0, 'Questão sem fonte válida.');
     ensure(!q.active || (q.status === 'approved' && b.review.status === 'approved'), 'Um rascunho não pode estar ativo para treino.');
   }
   ensure(Array.isArray(b.notes) && b.notes.length <= 50 && b.notes.every(x => str(x, 2000)), 'Observações inválidas.');
@@ -69,9 +77,10 @@ export function pickMission(bank, state, now) {
   const result = []; const sources = new Set(); const counts = {};
   for (const { q } of candidates) {
     if (result.length === 5) break;
-    if (q.source_item_ids.some(id => sources.has(id))) continue;
-    if ((counts[q.competence] || 0) >= 2 && candidates.some(x => !result.includes(x.q.id) && !x.q.source_item_ids.some(id => sources.has(id)) && (counts[x.q.competence] || 0) < 2)) continue;
-    result.push(q.id); q.source_item_ids.forEach(id => sources.add(id)); counts[q.competence] = (counts[q.competence] || 0) + 1;
+    const sourceIds = [...q.source_item_ids, ...(q.source_protocol_ids || [])];
+    if (sourceIds.some(id => sources.has(id))) continue;
+    if ((counts[q.competence] || 0) >= 2 && candidates.some(x => !result.includes(x.q.id) && ![...x.q.source_item_ids, ...(x.q.source_protocol_ids || [])].some(id => sources.has(id)) && (counts[x.q.competence] || 0) < 2)) continue;
+    result.push(q.id); sourceIds.forEach(id => sources.add(id)); counts[q.competence] = (counts[q.competence] || 0) + 1;
   }
   return result;
 }

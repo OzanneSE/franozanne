@@ -80,6 +80,7 @@ function empty(root) { append(root,node('h2','Carregue um pacote para começar')
 function sourceFor(bank, q) {
   const box = node('div',null,'source');
   for (const id of q.source_item_ids) { const i = bank.items.find(i => i.id === id); append(box,node('strong',i.reference),node('p',i.description)); }
+  for (const id of (q.source_protocol_ids || [])) { const p = bank.protocols.find(p => p.id === id); append(box,node('strong',p.name),node('p',p.description),node('small',p.reference)); }
   return box;
 }
 function review(root, bank) {

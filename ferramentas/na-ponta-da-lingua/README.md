@@ -1,4 +1,4 @@
-# Na Ponta da Língua — piloto manual 0.2
+# Na Ponta da Língua — piloto manual 0.3
 
 Aplicação genérica sem serviços externos. Recebe um pacote JSON preparado na conversa, permite revisar perguntas e consultar pratos, e libera treino somente com banco aprovado. A V0 específica de um restaurante continua sendo uma referência; este piloto não importa automaticamente seu progresso nem seu esquema antigo.
 
@@ -43,7 +43,8 @@ O arquivo também pode ser aberto diretamente no navegador do computador. No iPh
 - `source: {file_name, sha256}` identifica o documento de origem.
 - `notes: string[]` registra escopo, vigência e pendências.
 - `items[]: {id, name, service, category, description, reference}`.
-- `questions[]: {id, competence, prompt, options[], correct_index, explanation, source_item_ids[], status, active}`.
+- `protocols[]: {id, name, description, reference}` é opcional para situações de serviço com referência própria, sem misturá-las ao cardápio.
+- `questions[]: {id, competence, prompt, options[], correct_index, explanation, source_item_ids[], source_protocol_ids?[], status, active}`. Uma questão deve citar ao menos um prato ou protocolo válido.
 - Competências: `conhecer`, `explicar`, `aplicar`. Gabarito é índice de base zero. Três ou quatro alternativas distintas.
 
 `test/fixture.mjs` contém um exemplo completo e sintético. O validador limita campos e referências. Texto importado é apresentado com `textContent`, nunca executado como HTML.
