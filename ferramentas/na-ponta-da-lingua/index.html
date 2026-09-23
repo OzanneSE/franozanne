@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#365f40"><meta name="robots" content="noindex"><title>Na Ponta da Língua · Ozanne</title><style>:root{--paper:#f8f5ee;--white:#fffefa;--ink:#25342a;--muted:#59685e;--green:#365f40;--line:#d7ded4;--gold:#dec278;--pale:#e9efe5;--terra:#a84d2b}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button,.file{min-height:46px;border:1px solid var(--green);border-radius:8px;padding:10px 16px;background:var(--green);color:white;cursor:pointer;touch-action:manipulation;font-weight:600}button:disabled{opacity:.5;cursor:default}a{color:var(--green)}:focus-visible{outline:3px solid var(--terra);outline-offset:4px}.shell{max-width:1100px;margin:auto;padding:0 26px}header{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:26px 0}.brand{font-weight:850;letter-spacing:.17em}.brand span{display:block;font-size:9px;font-weight:500;letter-spacing:.12em}.badge{color:var(--terra);font-size:12px;border:1px solid var(--line);padding:5px 12px;border-radius:30px}nav{display:flex;gap:6px;border-bottom:1px solid var(--line);padding-bottom:14px;overflow:auto}nav button{background:transparent;color:var(--muted);border:0;white-space:nowrap}nav [aria-current=page]{background:var(--green);color:white}main{padding:38px 0 50px;min-height:55vh}h1,h2{font-family:Georgia,serif;font-weight:400;line-height:1.13;letter-spacing:-.025em}h1{font-size:clamp(2.6rem,6vw,4.6rem);margin:10px 0 24px;max-width:620px}h2{font-size:clamp(1.65rem,4vw,2.4rem);margin:0 0 18px}h3{font-size:1.08rem;margin:0 0 10px}p{margin-top:0}.eyebrow{text-transform:uppercase;letter-spacing:.14em;color:var(--terra);font-size:12px}.hero{background:var(--pale);border:1px solid var(--line);border-radius:18px;padding:38px;position:relative}.hero p{max-width:610px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.quiet{background:transparent;color:var(--green)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:24px 0}.panel,.stat{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:24px}.step{font-family:Georgia,serif;font-size:30px;color:var(--terra);display:block;margin-bottom:10px}.muted,small{color:var(--muted)}small{font-size:12px}.stat strong{display:block;font-family:Georgia,serif;font-size:36px}.stat{padding:18px}.context{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center;margin-bottom:24px}.context select,input[type=search]{background:var(--white);border:1px solid var(--line);border-radius:8px;min-height:46px;padding:10px;max-width:100%;color:var(--ink)}.note,#notice{padding:16px 20px;background:#f8efd7;border-left:4px solid var(--gold);border-radius:6px;margin:18px 0}.error{border-left-color:var(--terra)!important;background:#fff0e8!important}.file{position:relative;display:inline-flex;align-items:center;justify-content:center}.file input{position:absolute;inset:0;opacity:0;width:100%;cursor:pointer}.file:focus-within{outline:3px solid var(--terra);outline-offset:4px}details{border:1px solid var(--line);border-radius:10px;margin:14px 0;background:var(--white)}summary{padding:17px 20px;cursor:pointer;font-weight:600;min-height:52px;touch-action:manipulation}.inside{padding:0 20px 20px}.source{border-left:3px solid var(--line);padding-left:14px;margin-top:18px;font-size:13px}.catalog{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}.catalog .panel p{font-size:14px}.training{max-width:740px;margin:auto}fieldset{border:0;padding:0;margin:24px 0}legend{font-size:13px;color:var(--muted);margin-bottom:10px}.option{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:9px;padding:15px;margin:12px 0;background:var(--white);cursor:pointer;min-height:48px}.option input{margin:6px 0 0;width:18px;height:18px;flex-shrink:0;accent-color:var(--green)}.option.correct{background:var(--pale);border-color:var(--green)}.option.wrong{background:#fff0e8;border-color:var(--terra)}.feedback{border-left:4px solid var(--green);background:var(--pale);padding:22px;border-radius:8px;margin-top:24px}.feedback.wrong{border-color:var(--terra);background:#fff0e8}.rows{list-style:none;padding:0}.rows li{padding:12px 0;border-bottom:1px solid var(--line)}footer{padding:24px 0 30px;border-top:1px solid var(--line);font-size:13px}footer>small{display:block;max-width:700px}footer>div{display:flex;gap:14px;flex-wrap:wrap;margin-top:18px}footer .quiet{font-size:12px}.skip{position:absolute;top:-100px}.skip:focus{top:10px;background:white;padding:10px;z-index:10}[hidden]{display:none!important}@media(max-width:680px){.shell{padding:0 17px}header{padding:20px 0}.brand span{font-size:8px}.badge{font-size:10px}nav{gap:0}nav button{padding:8px 10px;font-size:13px}main{padding-top:25px}.hero{padding:25px}.grid,.catalog{grid-template-columns:1fr}.grid.stats{grid-template-columns:repeat(3,1fr);gap:8px}.stat{padding:14px 9px;font-size:12px}.stat strong{font-size:28px}.panel{padding:21px}.context select{width:100%}.training h2{font-size:1.6rem}.actions>*{flex:1}summary{padding:15px}.inside{padding:0 15px 15px}}@media print{nav,footer,button,.file{display:none}.panel,details{break-inside:avoid}}
+</style></head>
+<body>
+<a class="skip" href="#content">Ir para o conteúdo</a>
+<div class="shell">
+<header><div class="brand">OZANNE <span>CONHECIMENTO À MESA</span></div><span class="badge">Piloto manual · 0.2</span></header>
+<div id="notice" role="status" aria-live="polite" hidden></div>
+<section id="recovery" hidden class="panel"><h2>Seu progresso precisa de atenção</h2><p>Não foi possível ler os dados salvos. Baixe uma cópia de recuperação antes de continuar. O modo temporário não altera os dados originais.</p><button id="recoverDownload">Baixar recuperação</button><button id="temporary">Continuar em modo temporário</button></section>
+<nav aria-label="Seções"><button data-view="home" aria-current="page">Início</button><button data-view="review">Revisar</button><button data-view="catalog">Consultar</button><button data-view="train">Treinar</button><button data-view="progress">Progresso</button></nav>
+<main id="content" tabindex="-1"></main>
+<footer><p>Preparado com seu cardápio. Aprendido um pouco por vez.</p><small>Pacotes e progresso ficam neste navegador. Exporte um backup para recuperá-los. Este piloto usa um perfil por navegador, sem login ou sincronização.</small><div><button class="quiet" id="backup">Exportar backup</button><label class="file quiet">Importar pacote ou backup<input id="import" type="file" accept=".json,application/json"></label></div></footer>
+</div><script type="module">function ensure(ok, message) { if (!ok) throw new Error(message); }
+const str = (v, n = 2000) => typeof v === 'string' && v.trim().length > 0 && v.length <= n;
+const code = v => typeof v === 'string' && /^[a-zA-Z0-9][a-zA-Z0-9._-]{0,79}$/.test(v);
+function validateBank(b) {
+  ensure(b?.format === 'npl-manual' && b.schema_version === 1, 'Formato de banco não reconhecido. Use o pacote preparado para este piloto.');
+  ensure(code(b.restaurant?.id) && str(b.restaurant?.name, 160) && code(b.version), 'Restaurante ou versão inválidos.');
+  ensure(['draft', 'approved'].includes(b.review?.status), 'Situação de revisão inválida.');
+  if (b.review.status === 'approved') ensure(str(b.review.by, 160) && Number.isFinite(Date.parse(b.review.at)), 'Banco aprovado sem responsável ou data.');
+  ensure(str(b.source?.file_name, 240) && /^[a-f0-9]{64}$/.test(b.source?.sha256), 'A identificação da fonte está incompleta.');
+  ensure(Array.isArray(b.items) && b.items.length > 0 && b.items.length <= 500, 'O banco precisa ter de 1 a 500 itens.');
+  const items = new Set();
+  for (const i of b.items) {
+    ensure(code(i.id) && !items.has(i.id), 'Identificador de prato inválido ou repetido.'); items.add(i.id);
+    ensure(str(i.name, 240) && str(i.service, 120) && str(i.category, 160) && str(i.reference, 500), 'Há um prato sem nome, turno, categoria ou referência.');
+    ensure(typeof i.description === 'string' && i.description.length <= 5000, 'Descrição de prato inválida.');
+  }
+  ensure(Array.isArray(b.questions) && b.questions.length > 0 && b.questions.length <= 300, 'O banco precisa ter de 1 a 300 questões.');
+  const ids = new Set();
+  for (const q of b.questions) {
+    ensure(code(q.id) && !ids.has(q.id), 'Identificador de questão inválido ou repetido.'); ids.add(q.id);
+    ensure(str(q.prompt) && str(q.explanation, 4000) && ['conhecer', 'explicar', 'aplicar'].includes(q.competence), 'Questão incompleta.');
+    ensure(Array.isArray(q.options) && q.options.length >= 3 && q.options.length <= 4 && q.options.every(o => str(o, 1200)), 'Use três ou quatro alternativas por questão.');
+    ensure(new Set(q.options.map(o => o.trim().toLocaleLowerCase('pt-BR'))).size === q.options.length, 'Há alternativas repetidas.');
+    ensure(Number.isInteger(q.correct_index) && q.correct_index >= 0 && q.correct_index < q.options.length, 'Gabarito inválido.');
+    ensure(['draft', 'approved'].includes(q.status) && typeof q.active === 'boolean', 'Situação de questão inválida.');
+    ensure(Array.isArray(q.source_item_ids) && q.source_item_ids.length > 0 && q.source_item_ids.every(id => items.has(id)), 'Questão sem fonte válida.');
+    ensure(!q.active || (q.status === 'approved' && b.review.status === 'approved'), 'Um rascunho não pode estar ativo para treino.');
+  }
+  ensure(Array.isArray(b.notes) && b.notes.length <= 50 && b.notes.every(x => str(x, 2000)), 'Observações inválidas.');
+  return b;
+}
+function bankKey(b) { return `${b.restaurant.id}:${b.version}`; }
+function approvedQuestions(b) { return b.review.status === 'approved' ? b.questions.filter(q => q.active && q.status === 'approved') : []; }
+function initialState() { return { next_session: 1, active: null, sessions: [], attempts: [], reviews: [] }; }
+function validateState(s, bank) {
+  ensure(s && Number.isSafeInteger(s.next_session) && s.next_session > 0 && Array.isArray(s.sessions) && Array.isArray(s.attempts) && Array.isArray(s.reviews), 'Progresso inválido.');
+  const qs = new Map(bank.questions.map(q => [q.id, q]));
+  const ids = new Set(); const allSessions = [...s.sessions, ...(s.active ? [s.active] : [])];
+  for (const session of allSessions) {
+    ensure(code(session.id) && !ids.has(session.id) && Array.isArray(session.question_ids) && session.question_ids.length > 0 && session.question_ids.length <= 5 && session.question_ids.every(id => qs.has(id)) && new Set(session.question_ids).size === session.question_ids.length, 'Sessão inválida.'); ids.add(session.id);
+    ensure(Number.isInteger(session.position) && session.position >= 0 && session.position < session.question_ids.length, 'Posição de sessão inválida.');
+    ensure(/^s[1-9][0-9]*$/.test(session.id) && Number(session.id.slice(1)) < s.next_session, 'Sequência de sessões inválida.');
+  }
+  const attempts = new Set();
+  for (const a of s.attempts) {
+    const session = allSessions.find(x => x.id === a.session_id); const q = qs.get(a.question_id);
+    ensure(q && session && session.question_ids[a.position] === q.id && a.id === `${session.id}:${a.position}` && !attempts.has(a.id), 'Tentativa inválida ou repetida.'); attempts.add(a.id);
+    ensure(Number.isInteger(a.answer) && a.answer >= 0 && a.answer < q.options.length && a.correct === (a.answer === q.correct_index) && Number.isFinite(a.at), 'Resposta inválida.');
+  }
+  for (const session of s.sessions) ensure(session.question_ids.every((_, i) => attempts.has(`${session.id}:${i}`)), 'Missão concluída com respostas faltando.');
+  if (s.active) {
+    for (let i = 0; i < s.active.position; i++) ensure(attempts.has(`${s.active.id}:${i}`), 'Progresso da missão incompleto.');
+    ensure(s.active.question_ids.every(id => approvedQuestions(bank).some(q => q.id === id)), 'Uma missão contém questões não aprovadas.');
+  }
+  const reviewIds = new Set();
+  for (const r of s.reviews) {
+    ensure(qs.has(r.id) && !reviewIds.has(r.id) && [0,1,2,3].includes(r.level) && typeof r.error_pending === 'boolean' && Number.isFinite(r.due) && code(r.last_session), 'Revisão inválida.'); reviewIds.add(r.id);
+  }
+  return s;
+}
+const copy = s => JSON.parse(JSON.stringify(s));
+function xp(s) { return s.attempts.filter(a => a.correct).length * 10 + s.sessions.length * 10; }
+function pickMission(bank, state, now) {
+  const candidates = approvedQuestions(bank).map(q => {
+    const r = state.reviews.find(r => r.id === q.id);
+    const priority = !r ? 1 : (r.error_pending || r.due <= now) ? 0 : r.level === 3 ? 2 : 9;
+    return { q, r, priority, exposures: state.attempts.filter(a => a.question_id === q.id).length };
+  }).filter(x => x.priority < 9).sort((a,b) => a.priority-b.priority || (a.priority === 0 ? (a.r?.due || 0)-(b.r?.due || 0) : 0) || a.exposures-b.exposures || a.q.id.localeCompare(b.q.id));
+  const result = []; const sources = new Set(); const counts = {};
+  for (const { q } of candidates) {
+    if (result.length === 5) break;
+    if (q.source_item_ids.some(id => sources.has(id))) continue;
+    if ((counts[q.competence] || 0) >= 2 && candidates.some(x => !result.includes(x.q.id) && !x.q.source_item_ids.some(id => sources.has(id)) && (counts[x.q.competence] || 0) < 2)) continue;
+    result.push(q.id); q.source_item_ids.forEach(id => sources.add(id)); counts[q.competence] = (counts[q.competence] || 0) + 1;
+  }
+  return result;
+}
+function startMission(bank, state, now = Date.now()) {
+  if (state.active) return state;
+  const question_ids = pickMission(bank, state, now);
+  ensure(question_ids.length > 0, 'Não há questões aprovadas disponíveis para treinar agora. Consulte o cardápio ou aguarde a próxima revisão.');
+  const s = copy(state); s.active = { id: `s${s.next_session++}`, question_ids, position: 0, started_at: now }; return s;
+}
+function answerQuestion(bank, state, answer, now = Date.now()) {
+  ensure(state.active, 'Nenhuma missão em andamento.');
+  const session = state.active; const id = `${session.id}:${session.position}`;
+  if (state.attempts.some(a => a.id === id)) return state;
+  const q = approvedQuestions(bank).find(q => q.id === session.question_ids[session.position]);
+  ensure(q && Number.isInteger(answer) && answer >= 0 && answer < q.options.length, 'Escolha uma alternativa válida.');
+  const s = copy(state); const correct = answer === q.correct_index;
+  s.attempts.push({ id, session_id: session.id, position: session.position, question_id: q.id, answer, correct, at: now });
+  let r = s.reviews.find(r => r.id === q.id);
+  if (!r) { r = { id: q.id, level: 0, due: 0, error_pending: false, last_session: session.id }; s.reviews.push(r); }
+  if (!correct) { r.level = 0; r.error_pending = true; r.due = now; }
+  else if (r.level === 0 || r.error_pending || r.due <= now) {
+    r.level = Math.min(3, r.level + 1); r.error_pending = false;
+    r.due = now + [0,2,7,21][r.level] * 86400000;
+  }
+  r.last_session = session.id;
+  return s;
+}
+function advance(state, now = Date.now()) {
+  ensure(state.active, 'Nenhuma missão em andamento.');
+  ensure(state.attempts.some(a => a.id === `${state.active.id}:${state.active.position}`), 'Confirme a resposta antes de avançar.');
+  const s = copy(state);
+  if (s.active.position + 1 < s.active.question_ids.length) s.active.position++;
+  else { s.active.completed_at = now; s.sessions.push(s.active); s.active = null; }
+  return s;
+}
+
+
+const STORE = 'ozanne_npl_manual_v1';
+const $ = id => document.getElementById(id);
+let saved = { format: 'npl-backup', schema_version: 1, selected: null, packages: [] };
+let rawRecovery = ''; let storageSnapshot = ''; let temporary = false; let blocked = false; let view = 'home'; let selection = null;
+function node(tag, value, className) { const n = document.createElement(tag); if (value !== undefined && value !== null) n.textContent = value; if (className) n.className = className; return n; }
+function append(parent, ...children) { children.filter(Boolean).forEach(x => parent.appendChild(x)); return parent; }
+function button(label, fn, className = '') { const b = node('button', label, className); b.type = 'button'; b.addEventListener('click', () => safely(fn)); return b; }
+function notice(message, error = false) { const n = $('notice'); n.textContent = message; n.className = error ? 'error' : ''; n.hidden = !message; }
+function safely(fn) { try { const r = fn(); if (r?.catch) r.catch(e => notice(e.message, true)); } catch(e) { notice(e.message, true); } }
+function current() { return saved.packages.find(p => bankKey(p.bank) === saved.selected); }
+function verifyBackup(value) {
+  ensure(value?.format === 'npl-backup' && value.schema_version === 1 && Array.isArray(value.packages) && value.packages.length <= 20, 'Backup inválido.');
+  const keys = new Set();
+  for (const p of value.packages) { validateBank(p.bank); validateState(p.state, p.bank); const key = bankKey(p.bank); ensure(!keys.has(key), 'Pacote duplicado no backup.'); keys.add(key); }
+  ensure(value.selected === null || keys.has(value.selected), 'Seleção inválida no backup.');
+  return value;
+}
+function commit(next) {
+  ensure(!blocked, 'Baixe a recuperação e escolha o modo temporário para continuar.');
+  if (!temporary) {
+    try {
+      ensure((localStorage.getItem(STORE) || '') === storageSnapshot, 'Outra aba alterou os dados. Recarregue antes de continuar.');
+      const encoded = JSON.stringify(next); localStorage.setItem(STORE, encoded); storageSnapshot = encoded;
+    }
+    catch (e) { throw new Error(e.message.includes('Outra aba') ? e.message : 'Não foi possível salvar neste navegador. Exporte o backup antes de continuar em outro navegador.'); }
+  }
+  saved = next;
+}
+function saveState(nextState) {
+  const next = JSON.parse(JSON.stringify(saved)); const p = next.packages.find(p => bankKey(p.bank) === saved.selected); p.state = nextState; commit(next);
+}
+function download(name, value, raw = false) {
+  const blob = new Blob([raw ? value : JSON.stringify(value, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = name;
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 60000);
+}
+async function importFile(file) {
+  if (!file) return;
+  ensure(!blocked, 'Resolva a recuperação antes de importar.'); ensure(file.size <= 5 * 1024 * 1024, 'Use um arquivo JSON de até 5 MB.');
+  let data; try { data = JSON.parse(await file.text()); } catch { throw new Error('Este arquivo não contém JSON válido.'); }
+  if (data.format === 'npl-backup') {
+    verifyBackup(data);
+    if (saved.packages.length && !window.confirm('Restaurar este backup substituirá os pacotes e o progresso atuais. Exporte o backup atual antes, se precisar preservá-lo. Continuar?')) return;
+    commit(data); notice('Backup restaurado.');
+  } else {
+    validateBank(data);
+    const next = JSON.parse(JSON.stringify(saved)); const key = bankKey(data); const existing = next.packages.find(p => bankKey(p.bank) === key);
+    if (existing) ensure(JSON.stringify(existing.bank) === JSON.stringify(data), 'Já existe conteúdo diferente com essa versão. Solicite uma nova versão do pacote antes de importar.');
+    else { ensure(next.packages.length < 20, 'Limite de 20 pacotes neste piloto. Exporte seu backup.'); next.packages.push({ bank: data, state: initialState() }); }
+    next.selected = key; commit(next); notice(data.review.status === 'draft' ? 'Rascunho importado para revisão. O treino será liberado com um pacote aprovado.' : 'Banco aprovado importado. Pronto para treinar.');
+  }
+  view = 'home'; selection = null; render();
+}
+function importControl() { const label = node('label', 'Carregar pacote de treinamento', 'file'); const input = node('input'); input.type = 'file'; input.accept = '.json,application/json'; input.addEventListener('change', () => safely(() => importFile(input.files[0]))); label.appendChild(input); return label; }
+function navigate(to) { view = to; selection = null; render(); $('content').focus(); }
+function context(root) {
+  if (!saved.packages.length) return;
+  const bar = node('div', null, 'context'); const label = node('label', 'Restaurante e versão '); const select = node('select');
+  for (const p of saved.packages) { const o = node('option', `${p.bank.restaurant.name} · ${p.bank.version}`); o.value = bankKey(p.bank); o.selected = o.value === saved.selected; select.appendChild(o); }
+  select.addEventListener('change', () => safely(() => { const next = JSON.parse(JSON.stringify(saved)); next.selected = select.value; commit(next); selection = null; render(); }));
+  label.appendChild(select); append(bar, label, node('span', current().bank.review.status === 'approved' ? 'Aprovado para treino' : 'Rascunho para revisão', 'badge')); root.appendChild(bar);
+}
+function home(root) {
+  const p = current(); const hero = node('section', null, 'hero');
+  append(hero, node('div', 'Da leitura do cardápio à conversa com o cliente', 'eyebrow'), node('h1', 'Na ponta\nda língua.'), node('p', p ? `${p.bank.restaurant.name}: conteúdo da casa, organizado para explicar cada prato com confiança.` : 'Transforme o conhecimento do cardápio em prática. Carregue o pacote preparado e revisado com o responsável pelo restaurante.'));
+  const actions = node('div', null, 'actions');
+  if (p && approvedQuestions(p.bank).length) append(actions, button(p.state.active ? 'Retomar missão' : 'Começar missão', () => { saveState(startMission(p.bank, p.state)); navigate('train'); }));
+  if (p) append(actions, button('Revisar o conteúdo', () => navigate('review'), 'quiet'));
+  append(actions, importControl()); hero.appendChild(actions); root.appendChild(hero);
+  const steps = node('div', null, 'grid');
+  [['01','Preparar','Envie seu cardápio ou análise na conversa e receba um banco de perguntas com fontes.'],['02','Revisar','Confira o conteúdo, corrija o que for necessário e aprove o pacote.'],['03','Praticar','Missões curtas, explicações e revisão dos pontos que pedem mais atenção.']].forEach(([n,t,d]) => append(steps, append(node('div',null,'panel'),node('span',n,'step'),node('h3',t),node('p',d,'muted')))); root.appendChild(steps);
+  if (p) {
+    if (p.bank.review.status === 'draft') root.appendChild(node('p','Este pacote está em revisão. Leia as perguntas e envie os ajustes na conversa antes de liberar o treino.','note'));
+    for (const n of p.bank.notes) root.appendChild(node('p', n, 'note'));
+  }
+}
+function empty(root) { append(root,node('h2','Carregue um pacote para começar'),node('p','O aplicativo recebe o banco de treinamento em JSON preparado a partir da análise do seu cardápio.'),importControl()); }
+function sourceFor(bank, q) {
+  const box = node('div',null,'source');
+  for (const id of q.source_item_ids) { const i = bank.items.find(i => i.id === id); append(box,node('strong',i.reference),node('p',i.description)); }
+  return box;
+}
+function review(root, bank) {
+  append(root,node('div','Revisão editorial','eyebrow'),node('h2',`${bank.questions.length} perguntas para conferir`),node('p','Perguntas, gabaritos e explicações ficam vinculados aos itens de origem. A aprovação final acontece com o responsável pelo conteúdo.','muted'));
+  for (const [index,q] of bank.questions.entries()) {
+    const d = node('details'); const inside = node('div',null,'inside');
+    append(d,node('summary',`${index+1}. ${q.prompt}`)); const list = node('ol'); list.type = 'A'; q.options.forEach((o,i) => list.appendChild(node('li',o+(i===q.correct_index?' — gabarito':''))));
+    append(inside,node('p',`${q.competence} · ${q.status==='approved'?'aprovada':'rascunho'}`,'muted'),list,node('p',q.explanation),sourceFor(bank,q)); append(d,inside); root.appendChild(d);
+  }
+}
+function catalog(root, bank) {
+  append(root,node('div','Consulta rápida','eyebrow'),node('h2','O cardápio da casa'));
+  const input = node('input'); input.type = 'search'; input.placeholder = 'Buscar prato, ingrediente ou turno'; input.setAttribute('aria-label','Buscar no cardápio'); root.appendChild(input);
+  const grid = node('div',null,'catalog'); root.appendChild(grid);
+  const draw = () => {
+    grid.replaceChildren(); const term = input.value.toLocaleLowerCase('pt-BR');
+    const items = bank.items.filter(i => `${i.name} ${i.description} ${i.service} ${i.category}`.toLocaleLowerCase('pt-BR').includes(term));
+    items.forEach(i => append(grid,append(node('article',null,'panel'),node('div',`${i.service} · ${i.category}`,'eyebrow'),node('h3',i.name),node('p',i.description || 'Descrição pendente na fonte.'),node('small',i.reference))));
+    if (!items.length) grid.appendChild(node('p','Nenhum item encontrado.'));
+  }; input.addEventListener('input',draw); draw();
+}
+function training(root, p) {
+  if (!p.state.active) {
+    append(root,node('h2',p.state.sessions.length?'Prática concluída.':'Uma missão, poucos minutos.'),node('p',`${xp(p.state)} XP · ${p.state.sessions.length} missões concluídas.`));
+    const available = pickMission(p.bank,p.state,Date.now()).length;
+    append(root,node('p',available?`Até ${available} questões disponíveis nesta missão.`:'Nenhuma questão aprovada disponível agora. Conteúdos em aprendizagem aguardam a revisão; rascunhos aguardam aprovação.'),button('Começar missão',()=>{saveState(startMission(p.bank,p.state));render();}));
+    root.lastChild.disabled = available===0; return;
+  }
+  const s=p.state.active; const q=p.bank.questions.find(q=>q.id===s.question_ids[s.position]); const a=p.state.attempts.find(a=>a.id===`${s.id}:${s.position}`);
+  const wrap=node('div',null,'training'); const box=node('section',null,'panel');
+  append(wrap,node('div',`Questão ${s.position+1} de ${s.question_ids.length} · ${q.competence}`,'eyebrow'));
+  append(box,node('h2',q.prompt)); const field=node('fieldset'); append(field,node('legend','Escolha uma alternativa e confirme.'));
+  const confirm=button('Confirmar resposta',()=>{saveState(answerQuestion(p.bank,p.state,selection));navigate('train');}); confirm.disabled=selection===null;
+  q.options.forEach((o,i)=>{
+    const label=node('label',null,`option${a&&i===q.correct_index?' correct':a&&i===a.answer?' wrong':''}`); const radio=node('input'); radio.type='radio';radio.name='answer';radio.value=String(i);radio.checked=a?a.answer===i:selection===i;radio.disabled=Boolean(a);
+    radio.addEventListener('change',()=>{selection=i;confirm.disabled=false;}); append(label,radio,node('span',o));field.appendChild(label);
+  }); box.appendChild(field);
+  if (!a) box.appendChild(confirm);
+  else {
+    const fb=node('section',null,`feedback${a.correct?'':' wrong'}`); fb.setAttribute('role','status');
+    append(fb,node('h3',a.correct?'Acertou. +10 XP':'Vamos revisar esse ponto.'),node('p',`Resposta: ${q.options[q.correct_index]}`),node('p',q.explanation),sourceFor(p.bank,q),button(s.position+1===s.question_ids.length?'Concluir missão':'Próxima questão',()=>{saveState(advance(p.state));navigate('train');}));box.appendChild(fb);
+  }
+  append(wrap,box);root.appendChild(wrap);
+}
+function progress(root,p) {
+  append(root,node('div','Seu percurso','eyebrow'),node('h2','Aprender também é voltar.'));
+  const consistent=p.state.reviews.filter(r=>r.level===3).length;const stats=node('div',null,'grid stats');
+  [[xp(p.state),'XP acumulados'],[p.state.sessions.length,'missões'],[consistent,'questões consistentes']].forEach(([v,t])=>append(stats,append(node('div',null,'stat'),node('strong',String(v)),node('span',t))));root.appendChild(stats);
+  append(root,node('p','Acertos rendem 10 XP e concluir uma missão rende mais 10. A revisão acontece após 2, 7 e 21 dias. Um erro volta na próxima missão. XP registra atividade; não comprova domínio.','muted'));
+  const list=node('ul',null,'rows');
+  for(const r of p.state.reviews){const q=p.bank.questions.find(q=>q.id===r.id);append(list,append(node('li'),node('strong',q.prompt),node('div',r.error_pending?'Rever na próxima missão':`Próxima revisão: ${new Date(r.due).toLocaleDateString('pt-BR')}`)));}root.appendChild(list);
+}
+function render() {
+  const root=$('content');root.replaceChildren();document.querySelectorAll('[data-view]').forEach(b=>{if(b.dataset.view===view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
+  if(blocked){root.appendChild(node('p','Resolva a recuperação acima para abrir os pacotes.'));return;}
+  context(root); const p=current();
+  if(view==='home')home(root);else if(!p)empty(root);else if(view==='review')review(root,p.bank);else if(view==='catalog')catalog(root,p.bank);else if(view==='train')training(root,p);else progress(root,p);
+}
+$('import').addEventListener('change',e=>safely(async()=>{await importFile(e.target.files[0]);e.target.value='';}));
+$('backup').addEventListener('click',()=>safely(()=>{ensure(!blocked,'Use o botão de recuperação.');download('NA_PONTA_DA_LINGUA_BACKUP.json',saved);}));
+$('recoverDownload').addEventListener('click',()=>download('NA_PONTA_DA_LINGUA_RECUPERACAO.json',rawRecovery,true));
+$('temporary').addEventListener('click',()=>{temporary=true;blocked=false;$('recovery').hidden=true;notice('Modo temporário: exporte um backup antes de fechar. Nenhum progresso será salvo neste navegador.');render();});
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>navigate(b.dataset.view)));
+window.addEventListener('storage',e=>{if(e.key===STORE&&!temporary){blocked=true;notice('Os dados foram alterados em outra aba. Recarregue esta página antes de continuar.',true);render();}});
+try { const raw=localStorage.getItem(STORE);rawRecovery=raw||'';storageSnapshot=raw||'';if(raw)saved=verifyBackup(JSON.parse(raw)); }
+catch{blocked=true;$('recovery').hidden=false;notice('Não foi possível acessar o progresso salvo. Seus dados não foram substituídos.',true);}
+render();
+</script></body></html>
