@@ -11,7 +11,12 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ozanneconsultoria.com.br/links.html</loc>
+    <loc>https://ozanneconsultoria.com.br/ferramentas/fichas/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ozanneconsultoria.com.br/ferramentas/na-ponta-da-lingua/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
